@@ -33,9 +33,6 @@ class PostResource extends Resource
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->required(),
-                Forms\Components\Hidden::make('user_id')
-                    ->required()
-                    ->default(auth()->user()->id)
             ]);
     }
 
